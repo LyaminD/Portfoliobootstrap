@@ -1,0 +1,307 @@
+/*-----------------------GENERAL---------------------*/
+html {
+  width: 100vw;
+  background-color: #a9a9a9;
+  color:#fff;
+}
+
+h1{
+  font-family: 'Indie Flower', cursive;
+}
+
+p, h4{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+h2{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  align-self: center;
+  margin-bottom: 50px;
+
+}
+
+#CV{
+  font-size: 30px;
+  align-self: flex-start;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/*-------------HEADER--------------*/
+
+header {
+  background-color:#696969;
+display: flex;
+  height:50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 30px;
+}
+
+.titre {
+    justify-content:center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  font-family:'Indie Flower', cursive;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar a {
+  padding: 15px;
+  justify-content: space-around;
+}
+
+/*---------------------MAIN----------------------*/
+/*---------NEBULEUSE + TEXTE--------*/
+
+
+.partieune {
+  display: flex;
+}
+
+.texte {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/fusée.jpg);
+  background-size: cover;
+  text-align: center;
+  
+}
+
+.texte h1{
+    text-transform: uppercase;
+    font-size: 200%;
+    margin-top: 30px;
+    align-self:center;
+    
+}
+
+.texte h2{
+    text-transform: uppercase;
+    font-size: 200%;
+    margin-top: 140px;
+}
+
+.texte p{
+    align-self: center;
+    padding-top: 150px;
+    line-height: 50px;
+    word-spacing: 5px;
+}
+
+.barre{
+  background-color: #696969;
+  height: 50px ;
+}
+
+}
+
+/*----------------PROJETS----------*/
+.mesprojets{
+    height: 60vh;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    
+}
+
+#projets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#projets img{
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin-bottom: 30px;
+  max-width: 30vw;
+}
+
+.barre{
+  background-color: #696969;
+  height: 50px ;
+}
+
+#icone{
+  font-size: 70px;
+  margin-right: 25px;
+}
+
+#iconevert{
+  color: green;
+  font-size: 70px;
+  margin-right: 25px;
+}
+
+#iconerouge{
+  color:dodgerblue;
+  font-size: 70px;
+  margin-right: 25px;
+}
+
+#competences{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/*-------SUIVEZ MOI ------*/
+
+h4{
+  justify-content: center;
+   display: flex;
+   margin-bottom: 50px;
+   margin-top: 50px;
+ }
+
+#reseaux{
+  display: flex;
+  justify-content: center;
+}
+
+#reseaux i{
+  font-size: 60px;
+  margin: 0 20px;
+}
+
+#test{
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+ /*-------FOOTER----------*/
+
+ footer {
+  background-color: #696969;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/*---------------MEDIA QUERRIES------------------*/
+/*------MEDIA QUERRIES TELEPHONES------------*/
+@media screen and (max-width : 768px) { 
+    header {
+    height: 100px;
+  }
+
+  #container{
+  width: 100vw;
+  }
+
+  .menu{
+    padding-top: 15px;
+    justify-content:space-between;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+/*------------------*/
+.texte h1{
+  font-size: 100px;
+}
+.texte h2{
+  font-size: 200px;
+}
+.partieune{
+  display: flex;
+  flex-direction: column;
+}
+
+.texte{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.texte p{
+  word-spacing: 3px;
+  margin: 0 5vw;
+}
+.texte h1{
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.texte h2 {
+   font-size: 18px;
+   margin-top: 50px;
+ }
+
+ .texte p{
+ font-size: 25px;
+ margin-top: 10px;
+ }
+
+/*---------*/
+
+#projets{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#reseaux{
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#reseaux a{
+margin-top: 20px;  
+
+}
+#projets img{
+  max-width: 80vw;
+}
+
+}
+
+/*------MEDIA QUERRIES TABLETTE------------*/
+@media screen and( min-width : 769px ) and (max-width : 1024px) {
+
+
+
+header {
+    height: 100px;
+}
+
+#container{
+    width: 100vw;
+}
+
+.menu{
+    padding-top: 15px;
+}
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+
+}
