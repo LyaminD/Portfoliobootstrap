@@ -1,72 +1,165 @@
-/*-----------------------GENERAL---------------------*/
+/*--------------ANIMATIONS ECRITURES--------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1 {
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+/*---------------------------------GENERAL------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    background: linear-gradient(270deg, #6c9dcc, #9d1d1d);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} 
 html {
   width: 100vw;
-  background-color: #a9a9a9;
-  color:#fff;
+  color: #fff;
 }
 
-h1{
-  font-family: 'Indie Flower', cursive;
+.partieune h1 {
+  font-family: "Indie Flower", cursive;
 }
 
-p, h4{
-  font-family: 'Shadows Into Light', cursive;
+#container p {
+  font-family: "Shadows Into Light", cursive;
   font-size: 25px;
   align-self: center;
   margin-bottom: 50px;
+  color: #fff;
 }
 
-h2{
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 40px;
-  align-self: center;
-  margin-bottom: 50px;
-
-}
-
-#CV{
-  font-size: 30px;
-  align-self: flex-start;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-/*-------------HEADER--------------*/
-
-header {
-  background-color:#696969;
-display: flex;
-  height:50px;
-}
-
-.menu {
+#title {
+  justify-content: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 30px;
 }
 
-.titre {
-    justify-content:center;
-    font-family: 'Indie Flower', cursive;
+/*-----------------------------HEADER---+---BOUTON--------------------------*/
+.wrapper button {
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right top, #fb0712, #124feb);
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-.navbar ul {
+.wrapper button:hover {
+  background-image: linear-gradient(to right top, #0717fb, #f90a2f);
+}
+
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+.neons {
+  font-size: 25px;
+  height: 60px;
+  width: 150px;
   display: flex;
-  flex-direction: row;
-  font-family:'Indie Flower', cursive;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  font-family: "Balsamiq Sans", cursive;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 3px solid;
+  background-color: transparent;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  transition: all 0.5s;
 }
 
-.navbar a {
-  padding: 15px;
-  justify-content: space-around;
+.neons:hover {
+  background-color: var(--clr-neon);
+  color: #fff;
 }
 
-/*---------------------MAIN----------------------*/
-/*---------NEBULEUSE + TEXTE--------*/
-
+/*-------------------------------MAIN--------------------------------*/
+/*-----------------------NEBULEUSE + TEXTE---------------------------*/
 
 .partieune {
   display: flex;
@@ -76,120 +169,188 @@ display: flex;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-image: url(/images/fusée.jpg);
+  background-image: url(images/fusée.jpg);
   background-size: cover;
   text-align: center;
-  
 }
 
-.texte h1{
-    text-transform: uppercase;
-    font-size: 200%;
-    margin-top: 30px;
-    align-self:center;
-    
+.texte h1 {
+  text-transform: uppercase;
+  font-size: 200%;
+  margin-top: 30px;
+  align-self: center;
 }
 
-.texte h2{
-    text-transform: uppercase;
-    font-size: 200%;
-    margin-top: 140px;
+.texte p {
+  align-self: center;
+  padding-top: 150px;
+  line-height: 50px;
+  word-spacing: 5px;
 }
 
-.texte p{
-    align-self: center;
-    padding-top: 150px;
-    line-height: 50px;
-    word-spacing: 5px;
+/*----------------------------PROJETS------------------------------*/
+/*---------------------------COMPETENCES-----------------------------*/
+
+.container {
+  overflow: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-.barre{
-  background-color: #696969;
-  height: 50px ;
+.cards {
+  overflow: auto;
+  min-height: 550px;
 }
 
-}
-
-/*----------------PROJETS----------*/
-.mesprojets{
-    height: 60vh;
-    display: flex;
-    margin-top: 50px;
-    flex-direction: column;
-    
-}
-
-#projets{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#projets img{
+.card {
+  background: #3a3a3a;
+  background: linear-gradient(to right, #474747, #222);
+  min-width: 300px;
+  height: 380px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  margin-bottom: 30px;
-  max-width: 30vw;
+  box-shadow: -5px 5px 25px #0000009d;
+  padding: 20px;
+  border: none;
+  transition: all 0.3s ease-in-out;
 }
 
-.barre{
-  background-color: #696969;
-  height: 50px ;
+.card img {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
 }
 
-#icone{
-  font-size: 70px;
-  margin-right: 25px;
+.card .text-grey {
+  color: #ccc;
+  font-weight: 500;
 }
 
-#iconevert{
-  color: green;
-  font-size: 70px;
-  margin-right: 25px;
+.card .light-grey {
+  color: #aaa;
+  font-weight: 300;
 }
 
-#iconerouge{
-  color:dodgerblue;
-  font-size: 70px;
-  margin-right: 25px;
+.card .fs-5 {
+  font-size: 1.15rem !important;
 }
 
-#competences{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+.card a {
+  color: #fff;
+  text-decoration: none;
 }
 
-/*-------SUIVEZ MOI ------*/
+.card:not(:first-child) {
+  margin-left: -8rem;
+}
 
-h4{
+.cards::-webkit-scrollbar {
+  height: 10px;
+}
+
+.cards::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+  background: linear-gradient(to right, #ff002b, #002fff);
+  border-radius: 10px;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-1rem) rotateZ(5deg);
+}
+
+.card:hover ~ .card,
+.card:focus-within ~ .card {
+  transform: translateX(8rem);
+}
+/*-----------------------------PARCOURS---------------------------*/
+
+/*-----------------------------HOBBY---------------------------------*/
+
+.container .kard {
+  max-width: 300px;
+  height: 215px;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f0ebeb;
+}
+
+.container .kard:hover {
+  height: 450px;
+}
+
+.container .kard .imgContainer {
+  position: relative;
+  width: 250px;
+  height: 2 0px;
+  top: -50px;
+  left: 10px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .kard .imgContainer img {
+  border-radius: 4px;
+  height: 100px;
+  width: 250px;
+}
+
+.container .kard .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.container .kard:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+  .container .kard .imgContainer {
+    left: -2px;
+  }
+}
+
+/*------------------------SUIVEZ MOI ----------------------------*/
+
+h4 {
   justify-content: center;
-   display: flex;
-   margin-bottom: 50px;
-   margin-top: 50px;
- }
-
-#reseaux{
   display: flex;
-  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-#reseaux i{
+#reseaux {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#reseaux i {
   font-size: 60px;
   margin: 0 20px;
 }
 
-#test{
-  justify-content: center;
-  margin-top: 10px;
-  display: flex;
-}
+/*----------------------------FOOTER------------------------------*/
 
- /*-------FOOTER----------*/
-
- footer {
-  background-color: #696969;
+footer {
+  background-color: #f0ebeb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,110 +359,18 @@ h4{
   padding-bottom: 40px;
 }
 
-
-/*---------------MEDIA QUERRIES------------------*/
-/*------MEDIA QUERRIES TELEPHONES------------*/
-@media screen and (max-width : 768px) { 
-    header {
-    height: 100px;
-  }
-
-  #container{
-  width: 100vw;
-  }
-
-  .menu{
-    padding-top: 15px;
-    justify-content:space-between;
-  }
-
-  .navbar ul {
-    display: flex;
+/*-------------------------MEDIA QUERRIES-------------------------------*/
+/*---------------------MEDIA QUERRIES TELEPHONES---------------------*/
+@media screen and (max-width: 768px) {
+  #reseaux {
     flex-direction: column;
-    margin-left: 30px;
+    align-items: center;
   }
-
-/*------------------*/
-.texte h1{
-  font-size: 100px;
-}
-.texte h2{
-  font-size: 200px;
-}
-.partieune{
-  display: flex;
-  flex-direction: column;
+  #reseaux a {
+    margin-top: 20px;
+  }
 }
 
-.texte{
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.texte p{
-  word-spacing: 3px;
-  margin: 0 5vw;
-}
-.texte h1{
-  font-size: 20px;
-  margin-left: 15px;
-}
-
-.texte h2 {
-   font-size: 18px;
-   margin-top: 50px;
- }
-
- .texte p{
- font-size: 25px;
- margin-top: 10px;
- }
-
-/*---------*/
-
-#projets{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-#reseaux{
-  flex-direction: column;
-  align-items: center;
- 
-}
-#reseaux a{
-margin-top: 20px;  
-
-}
-#projets img{
-  max-width: 80vw;
-}
-
-}
-
-/*------MEDIA QUERRIES TABLETTE------------*/
-@media screen and( min-width : 769px ) and (max-width : 1024px) {
-
-
-
-header {
-    height: 100px;
-}
-
-#container{
-    width: 100vw;
-}
-
-.menu{
-    padding-top: 15px;
-}
-
-  .navbar ul {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-}
-
-
+/*--------------------MEDIA QUERRIES TABLETTE-----------------------*/
+@media screen and( min-width : 769px ) and (max-width: 1024px) {
 }

@@ -1,194 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio DIAFAT Lyamin Bootstrap</title>
 
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio DIAFAT Lyamin Bootstrap</title>
 
-  <body>
-    <header>
-      <nav class="menu">
-        <div class="titre">DIAFAT Lyamin</div>
-        <div class="navbar">
-          <ul>
-            <li><a href="#Quisuisje"></a>Qui suis-je ?</li>
-            <li><a href="#Mesprojets"></a>Mes projets</li>
-            <li><a href="#contact"></a>Contact</li>
+  <link rel="stylesheet" href="style.css" />
+  <!-----------------------------FONT AWESOME + BOOTSTRAP--------------------------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <!--------------------------------------GOOGLE FONTS----------------------------------->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+<!--------------------NAVBAR + PRESENTATION--------------------------------->
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#">DIAFAT Lyamin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active align-items-center" aria-current="page" href="#navbar">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Mesprojets">Mes projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Competences">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Parcours">Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Hobby">Hobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reseauxsociaux">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CV.pdf" download="">
+                <div class="wrapper"> <button class="neons">Télécharger mon CV</button>
+                </div>
+              </a>
+            </li>
+            </li>
           </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section id="container">
-        <div class="partieune">
-          <div class="texte" id="Quisuisje">
-            <h1>La tête dans le dev, le coeur dans les étoiles</h1>
-            <h2>Qui suis-je ?</h2>
+  <main>
+    <section id="container">
+      <div class="partieune">
+        <div class="texte" id="Quisuisje">
+          <h1>La tête dans le dev, le coeur dans les étoiles</h1>
+          <h1>Qui suis-je ?</h1>
 
-            <p>
-              Bonjour je me présente je suis Lyamin, nouveau dans le métier du
-              dévellopement Web.<br />
+          <p>
+            Bonjour je me présente je suis Lyamin, nouveau dans le métier du
+            dévellopement Web.<br />
 
-              Ancien ambulancier et ancien militaire, je suis autodidacte a mes
-              heures perdues.<br />
+            Ancien ambulancier et ancien militaire, je suis autodidacte a mes
+            heures perdues.<br />
 
-              Grand fan d'atronomie et d'astro-photographie, venez voyagez avec
-              moi dans mes projets
-            </p>
+            Grand fan d'atronomie et d'astro-photographie, venez voyagez avec
+            moi dans mes projets
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <div id="CV">
-              <a href="images/t_tut3.gif" download
-                >Télécharger mon CV ici !<i
-                  class="fas fa-rocket"
-                  style="color: dodgerblue"
-                ></i
-              ></a>
+
+    <!--------------------PROJETS + CAROUSSEL--------------------------------->
+
+    <section id="container" class="mesprojets">
+      <div id="title">
+        <h1 id="Mesprojets">Mes projets</h1>
+      </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Captureile.PNG" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Capturefilles.PNG" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Capturecard.PNG" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Captureresto.PNG" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Capturevoyage.PNG" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <div class="barre"></div>
-      <section id="container" class="mesprojets">
-        <div id="test"><h2 id="Mesprojets">Mes projets</h2></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
 
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Captureile.PNG" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/Capturefilles.PNG" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/Capturecard.PNG" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/Captureresto.PNG" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/Capturevoyage.PNG" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <!--------------------COMPETENCES--------------------------------------->
+
+    <div id="title">
+      <h1 id="Competences">Compétences</h1>
+    </div>
+
+
+    <div class="container mt-5">
+      <div class="d-flex align-items-center cards">
+        <div class="card">
+          <div class="mb-3">
+            <span class="text-grey fs-5">HTML</span><br />
+            <span class="light-grey fs-6">Maitrisé</span>
           </div>
-
-      </section>
-
-      <div class="barre"></div>
-
-      <div id="test"><h2 id="Mesprojets">Compétences</h2></div>
-
-      <div id="competences">
-        <div>
-          <i class="fab fa-html5" id="icone" style="color: orangered"></i
-          ><i class="fas fa-check" id="iconevert"></i>
-
-          <i class="fab fa-css3-alt" id="icone" style="color: blue"></i
-          ><i class="fas fa-check" id="iconevert"></i>
+          <div class="h5"><img src="images/HTML5.jpg" alt="HTML" /></div>
         </div>
-        <div>
-          <i class="fab fa-js-square" id="icone" style="color: yellow"></i
-          ><i class="fas fa-history" id="iconerouge"></i>
+        <div class="card">
+          <div class="mb-3">
+            <span class="text-grey fs-5">CSS</span><br />
+            <span class="light-grey fs-6">Maitrisé</span>
+          </div>
+          <div class="h5"><img src="images/css.jpg" alt="CSS" /></div>
+        </div>
+        <div class="card">
+          <div class="mb-3">
+            <span class="text-grey fs-5">javascript</span><br />
+            <span class="light-grey fs-6">En cours d'acquisition</span>
+          </div>
+          <div class="h5">
+            <img src="images/javascript.png" alt="javascript" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="mb-3">
+            <span class="text-grey fs-5">Bootstrap</span><br />
+            <span class="light-grey fs-6">Maitrisé</span>
+          </div>
+          <div class="h5">
+            <img src="images/bootstrap.jpg" alt="Bootstrap" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="mb-3">
+            <span class="text-grey fs-5">AdobeXD</span><br />
+            <span class="light-grey fs-6">En cours d'acquisition</span>
+          </div>
+          <div class="h5"><img src="images/AdobeXD.jpg" alt="AdobeXD" /></div>
+        </div>
+        <div class="card">
+          <div class="mb-3">
+            <span class="text-grey fs-5">PHP</span><br />
+            <span class="light-grey fs-6">En cours d'acquisition</span>
+          </div>
+          <div class="h5"><img src="images/PHP.jpg" alt="PHP" /></div>
+        </div>
+        <div class="card">
+          <div class="mb-3">
+            <span class="text-grey fs-5">Wordpress</span><br />
+            <span class="light-grey fs-6">En cours d'acquisition</span>
+          </div>
+          <div class="h5">
+            <img src="images/Wordpress.jpg" alt="Wordpress" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-          <i class="fab fa-bootstrap" id="icone" style="color: slateblue"></i
-          ><i class="fas fa-history" id="iconerouge"></i>
+    <!--------------------PARCOURS--------------------------------------->
+    <div id="title">
+      <h1 id="Parcours">Parcours</h1>
+    </div>
+    <div class="accordion container" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Formation ArInfo
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Formation devellopeur WEB.</strong>Formation devellopeur WEB. HTML CSS Bootstrap javascript Php
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Stage Amiltone
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Stage chez Amiltone Niort.</strong>Stage chez Amiltone, confirmation du projet professionnel,
+            découverte approfondie du HTML CSS , début sur Bootstrap et javascript.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Auxiliaire Ambulancier
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Auxiliaire Ambulancier.</strong>Différentes intervention SAMU. Transport de patients centre /
+              domiciles vers les hopitaux.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+              Militaire
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Militaire.</strong> Réserviste au 40eme Régiment d'artillerie.Elève sous-officier.Législation,
+              entrainement au tir et au commandement.Evacuations sanitaire. VIGI-pirate
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+              BAC-Pro Tourneur Fraiseur
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>BAC PRO Tourneur Fraiseur.</strong> Déssin industriel, usinage et réglages sur machine à commandes
+              numérique et traditionnelles
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="barre"></div>
+      <!--------------------HOBBY--------------------------------------->
+      <div id="title">
+        <h1 id="Hobby">Hobby</h1>
+      </div>
+      <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+        <div class="kard d-flex position-relative flex-column">
+          <div class="imgContainer"><img src="images/informatique.png" /></div>
+          <div class="content">
+            <h2>informatique / jeux video</h2>
+            <p>Jeux vidéos , montage d'ordinateurs, informatique.</p>
+          </div>
+        </div>
+        <div class="kard d-flex position-relative flex-column">
+          <div class="imgContainer"><img src="images/peinture.png" /></div>
+          <div class="content">
+            <h2>Peinture</h2>
+            <p>Figurines a assembler et peindre. Jeux de wargame / plateau</p>
+          </div>
+        </div>
+        <div class="kard d-flex position-relative flex-column">
+          <div class="imgContainer"><img src="images/telescope.jpg" /></div>
+          <div class="content">
+            <h2>Astrologie</h2>
+            <p>Obsérvation d'objets célèstes.</p>
+          </div>
+        </div>
+        <div class="kard d-flex position-relative flex-column">
+          <div class="imgContainer"><img src="images/astrophoto.jpg" /></div>
+          <div class="content">
+            <h2>Astro-photographie</h2>
+            <p>
+              Photographie nocture d'objet célèste avec retouche photo sur GIMP.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------RESEAUX--------------------------------------->
+
+
       <section id="container">
-        <h4 id="contact">Suivez-moi sur les réseaux !!!</h4>
+        <h1>Suivez-moi sur les réseaux !!!</h1>
 
         <div id="reseauxsociaux">
           <div id="suivezmoi"></div>
           <div id="reseaux">
             <a href="https://www.facebook.com/lyamin.diafat" target="_blank">
-              <i class="fab fa-facebook-square" style="color: blue"></i
-            ></a>
-            <a href="https://gitlab.com/Lyamin" target="_blank"
-              ><i class="fab fa-gitlab" style="color: orangered"></i
-            ></a>
-            <a href="https://github.com/search?q=LyaminD" target="_blank"
-              ><i class="fab fa-github" style="color: black"></i
-            ></a>
-            <a href="https://twitter.com/DiafatYamms" target="_blank"
-              ><i class="fab fa-twitter" style="color: blue"></i
-            ></a>
+              <i class="fab fa-facebook-square" style="color: blue"></i></a>
+            <a href="https://gitlab.com/Lyamin" target="_blank"><i class="fab fa-gitlab"
+                style="color: orangered"></i></a>
+            <a href="https://github.com/search?q=LyaminD" target="_blank"><i class="fab fa-github"
+                style="color: rgb(73, 70, 70)"></i></a>
+            <a href="https://twitter.com/DiafatYamms" target="_blank"><i class="fab fa-twitter"
+                style="color: blue"></i></a>
 
-            <a href="https://goo.gl/maps/kG55werw1rqKytVb8" target="_blank"
-              ><i class="fas fa-rocket" style="color: red"></i
-            ></a>
+            <a href="https://goo.gl/maps/kG55werw1rqKytVb8" target="_blank"><i class="fas fa-rocket"
+                style="color: red"></i></a>
             <p>J'habite par la !</p>
           </div>
         </div>
-       
-        <h4>merci !!!</h4>
+
       </section>
-    </main>
+  </main>
 
-    <footer>
-      <p>© Portfolio DIAFAT Lyamin - 2021.</p>
-    </footer>
+  <footer>
+    <p>© Portfolio DIAFAT Lyamin - 2021.</p>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
