@@ -166,7 +166,6 @@ html {
   color: #fff;
 }
 
-
 #navbarNav li{
   margin-left: 40px;
   margin-right: 40px;
@@ -258,6 +257,17 @@ h3:focus {
 }
 
 /*----------------------------PROJETS------------------------------*/
+h5{
+  color: red;
+}
+
+.carousel-caption{
+  background-color: rgb(0, 128, 6);
+}
+
+.w-100{
+  border-radius: 10px;
+}
 /*---------------------------COMPETENCES-----------------------------*/
 
 .container {
@@ -387,6 +397,7 @@ h3:focus {
   opacity: 1;
   margin-top: -40px;
   transition-delay: 0.3s;
+  
 }
 
 @media (max-width: 330px) {
@@ -394,7 +405,6 @@ h3:focus {
     left: -2px;
   }
 }
-
 /*------------------------SUIVEZ MOI ----------------------------*/
 
 h4 {
@@ -429,7 +439,7 @@ footer {
 
 /*-------------------------MEDIA QUERRIES-------------------------------*/
 /*---------------------MEDIA QUERRIES TELEPHONES---------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   #reseaux {
     flex-direction: column;
     align-items: center;
@@ -437,8 +447,21 @@ footer {
   #reseaux a {
     margin-top: 20px;
   }
+  .container .kard:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+  }
 }
 
 /*--------------------MEDIA QUERRIES TABLETTE-----------------------*/
-@media screen and( min-width : 769px ) and (max-width: 1024px) {
+@media screen and( min-width : 767px ) and (max-width: 1024px) {
+  .container .kard:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+  }
+ 
 }
